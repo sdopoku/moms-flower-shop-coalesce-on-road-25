@@ -1,0 +1,16 @@
+{
+  "name": "dbt-core-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/va-h/devcontainers-features/uv:1": {
+      "version": "latest"
+    },
+
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true,
+      "toolsToInstall": ["dbt-core", "dbt-snowflake"]
+    }
+  },
+  "initializeCommand": "uv venv dbtcore"
+  
+}
