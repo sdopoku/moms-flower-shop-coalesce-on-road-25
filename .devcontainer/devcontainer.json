@@ -6,11 +6,6 @@
       "version": "latest"
     },
 
-    "ghcr.io/devcontainers/features/python:1": {
-      "installTools": true,
-      "toolsToInstall": ["dbt-core", "dbt-snowflake"]
-    }
-  },
-  "initializeCommand": "uv venv dbtcore"
-  
+   "ghcr.io/devcontainers-extra/features/dbt-coverage:1": {}
+  }
 }
